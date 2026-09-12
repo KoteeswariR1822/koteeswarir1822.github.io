@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"
-        content="Portfolio of Koteeswari R - Software Engineering Student">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  <title>Koteeswari R | Software Engineering Student</title>
+  <meta
+    name="description"
+    content="Portfolio of Koteeswari R - Aspiring Software Developer"
+  >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <title>Koteeswari R | Software Developer Portfolio</title>
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -26,303 +23,196 @@
       scroll-behavior: smooth;
     }
 
-    :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --navy: #0f172a;
-      --text: #334155;
-      --muted: #64748b;
-      --light: #f8fafc;
-      --white: #ffffff;
-      --border: #e2e8f0;
-      --blue-light: #eff6ff;
-    }
-
     body {
-      font-family: "Inter", Arial, sans-serif;
-      background: var(--white);
-      color: var(--text);
-      line-height: 1.7;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f8fafc;
     }
 
     a {
       text-decoration: none;
+      color: inherit;
     }
 
-    /* NAVBAR */
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-    header {
-      width: 100%;
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
       position: sticky;
       top: 0;
       z-index: 1000;
       background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    nav {
-      max-width: 1200px;
+    .nav-container {
+      max-width: 1150px;
       margin: auto;
-      height: 72px;
-      padding: 0 25px;
-
+      padding: 16px 25px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 800;
-      color: var(--navy);
+      color: #2563eb;
+      letter-spacing: -0.5px;
     }
 
-    .logo span {
-      color: var(--primary);
-    }
-
-    nav ul {
+    .nav-links {
       display: flex;
-      list-style: none;
       gap: 28px;
+      list-style: none;
     }
 
-    nav ul li a {
-      color: #475569;
-      font-size: 14px;
+    .nav-links a {
+      color: #374151;
+      font-size: 15px;
       font-weight: 600;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
 
-    nav ul li a:hover {
-      color: var(--primary);
+    .nav-links a:hover {
+      color: #2563eb;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
-      min-height: calc(100vh - 72px);
-
-      background:
-        radial-gradient(
-          circle at 10% 20%,
-          rgba(37, 99, 235, 0.12),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 90% 80%,
-          rgba(59, 130, 246, 0.10),
-          transparent 30%
-        ),
-        #f8fafc;
-
+      min-height: 88vh;
       display: flex;
       align-items: center;
-    }
-
-    .hero-container {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 80px 25px;
-
-      display: grid;
-      grid-template-columns: 0.8fr 1.5fr 0.9fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    /* PROFILE PHOTO */
-
-    .photo-container {
-      display: flex;
-      justify-content: center;
-    }
-
-    .photo-wrapper {
-      width: 285px;
-      height: 350px;
-
-      padding: 7px;
-      border-radius: 30px;
-
       background:
         linear-gradient(
           135deg,
-          #2563eb,
-          #60a5fa
+          #eff6ff 0%,
+          #ffffff 50%,
+          #f8fafc 100%
         );
+    }
 
+    .hero-container {
+      max-width: 1150px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 25px;
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 58px;
+      line-height: 1.1;
+      color: #111827;
+      margin-bottom: 15px;
+      letter-spacing: -2px;
+    }
+
+    .hero-content h1 span {
+      color: #2563eb;
+    }
+
+    .hero-title {
+      font-size: 25px;
+      color: #4b5563;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      font-size: 17px;
+      color: #6b7280;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #2563eb;
+      color: #2563eb;
+      background: white;
+    }
+
+    .btn-secondary:hover {
+      background: #eff6ff;
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       PROFILE PHOTO
+    ========================= */
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .photo-wrapper {
+      width: 330px;
+      height: 390px;
+      border-radius: 24px;
+      padding: 10px;
+      background: white;
       box-shadow:
-        0 25px 60px
-        rgba(37, 99, 235, 0.22);
+        0 25px 50px rgba(37, 99, 235, 0.15),
+        0 10px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid #dbeafe;
+      overflow: hidden;
     }
 
     .profile-photo {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
-      object-position: center top;
-
-      border-radius: 24px;
-      display: block;
-      background: white;
+      object-position: center;
+      border-radius: 17px;
     }
 
-    /* HERO TEXT */
-
-    .hero-text .tag {
-      display: inline-block;
-
-      padding: 7px 14px;
-      border-radius: 50px;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
-      font-size: 12px;
-      font-weight: 700;
-
-      letter-spacing: 0.5px;
-      margin-bottom: 18px;
-    }
-
-    .hero-text h1 {
-      font-size: 58px;
-      line-height: 1.1;
-
-      color: var(--navy);
-      margin-bottom: 12px;
-
-      font-weight: 800;
-    }
-
-    .hero-text h1 span {
-      color: var(--primary);
-    }
-
-    .hero-text h2 {
-      font-size: 22px;
-      color: var(--primary);
-
-      margin-bottom: 20px;
-      font-weight: 600;
-    }
-
-    .hero-text p {
-      color: var(--muted);
-      font-size: 16px;
-
-      max-width: 650px;
-      margin-bottom: 28px;
-    }
-
-    /* BUTTONS */
-
-    .hero-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      padding: 12px 22px;
-      border-radius: 8px;
-
-      font-size: 14px;
-      font-weight: 700;
-
-      transition: 0.3s;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-
-      box-shadow:
-        0 8px 20px
-        rgba(37, 99, 235, 0.25);
-    }
-
-    .btn-primary:hover {
-      background: var(--primary-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      border: 1.5px solid var(--primary);
-      color: var(--primary);
-      background: white;
-    }
-
-    .btn-outline:hover {
-      background: var(--primary);
-      color: white;
-    }
-
-    /* HERO CONTACT */
-
-    .hero-contact {
-      border-left: 1px solid var(--border);
-      padding-left: 35px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 20px;
-    }
-
-    .contact-icon {
-      width: 38px;
-      height: 38px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 10px;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
-      font-size: 17px;
-      flex-shrink: 0;
-    }
-
-    .contact-item div:last-child {
-      padding-top: 4px;
-    }
-
-    .contact-label {
-      display: block;
-      color: var(--muted);
-      font-size: 11px;
-      margin-bottom: 2px;
-    }
-
-    .contact-value {
-      color: var(--navy);
-      font-size: 13px;
-      font-weight: 600;
-      word-break: break-word;
-    }
-
-    .contact-value a {
-      color: var(--primary);
-    }
-
-    /* COMMON SECTION */
+    /* =========================
+       GENERAL SECTION
+    ========================= */
 
     section {
-      padding: 90px 25px;
+      padding: 85px 25px;
     }
 
     .section-container {
@@ -331,1601 +221,1068 @@
     }
 
     .section-heading {
-      margin-bottom: 45px;
-    }
-
-    .section-heading .small-title {
-      color: var(--primary);
-
-      font-size: 12px;
-      font-weight: 800;
-
-      letter-spacing: 2px;
-      text-transform: uppercase;
-
-      margin-bottom: 7px;
+      text-align: center;
+      margin-bottom: 50px;
     }
 
     .section-heading h2 {
-      font-size: 34px;
-      color: var(--navy);
-      font-weight: 800;
+      font-size: 36px;
+      color: #111827;
+      margin-bottom: 10px;
     }
 
-    .section-heading h2 span {
-      color: var(--primary);
+    .section-heading p {
+      color: #6b7280;
+      font-size: 16px;
     }
 
-    .section-heading .line {
-      width: 45px;
-      height: 3px;
+    /* =========================
+       ABOUT
+    ========================= */
 
-      background: var(--primary);
-      margin-top: 12px;
-    }
-
-    /* ABOUT */
-
-    #about {
+    .about {
       background: white;
     }
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-
-      gap: 50px;
-      align-items: center;
+    .about-content {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
     }
 
-    .about-text p {
-      color: var(--muted);
-      font-size: 16px;
+    .about-content p {
+      color: #4b5563;
+      font-size: 17px;
       margin-bottom: 18px;
     }
 
-    .about-highlights {
-      background: #f8fafc;
+    /* =========================
+       SKILLS
+    ========================= */
 
-      border: 1px solid var(--border);
-      border-radius: 18px;
-
-      padding: 30px;
-    }
-
-    .highlight {
-      display: flex;
-      gap: 15px;
-
-      padding: 15px 0;
-
-      border-bottom: 1px solid var(--border);
-    }
-
-    .highlight:last-child {
-      border-bottom: none;
-    }
-
-    .highlight-icon {
-      width: 42px;
-      height: 42px;
-
-      border-radius: 12px;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-size: 19px;
-      flex-shrink: 0;
-    }
-
-    .highlight h4 {
-      color: var(--navy);
-      font-size: 14px;
-      margin-bottom: 2px;
-    }
-
-    .highlight p {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    /* SKILLS */
-
-    #skills {
+    .skills {
       background: #f8fafc;
     }
 
-    .skill-groups {
+    .skills-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
-    .skill-group {
+    .skill-card {
       background: white;
-
       padding: 25px;
-
-      border: 1px solid var(--border);
-      border-radius: 16px;
-
-      transition: 0.3s;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      transition: 0.3s ease;
     }
 
-    .skill-group:hover {
-      transform: translateY(-4px);
-
-      box-shadow:
-        0 15px 35px
-        rgba(15, 23, 42, 0.08);
+    .skill-card:hover {
+      transform: translateY(-5px);
+      border-color: #bfdbfe;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
     }
 
-    .skill-group h3 {
-      font-size: 16px;
-      color: var(--navy);
-      margin-bottom: 15px;
+    .skill-card h3 {
+      color: #2563eb;
+      margin-bottom: 14px;
+      font-size: 19px;
     }
 
-    .skill-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .skill-card p {
+      color: #4b5563;
+      font-size: 15px;
     }
 
-    .skill-tag {
-      padding: 7px 12px;
+    /* =========================
+       PROJECTS
+    ========================= */
 
-      background: #f1f5f9;
-
-      border-radius: 6px;
-
-      color: #475569;
-
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    /* PROJECTS */
-
-    #projects {
+    .projects {
       background: white;
     }
 
     .projects-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(2, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       gap: 25px;
     }
 
     .project-card {
-      background: white;
-
-      border: 1px solid var(--border);
-      border-radius: 18px;
-
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 15px;
       padding: 28px;
-
-      position: relative;
-      overflow: hidden;
-
-      transition: 0.3s;
-    }
-
-    .project-card::before {
-      content: "";
-
-      position: absolute;
-
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 4px;
-
-      background:
-        linear-gradient(
-          90deg,
-          #2563eb,
-          #60a5fa
-        );
+      transition: 0.3s ease;
     }
 
     .project-card:hover {
-      transform: translateY(-6px);
-
-      box-shadow:
-        0 20px 40px
-        rgba(15, 23, 42, 0.09);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.07);
+      border-color: #bfdbfe;
     }
 
     .project-number {
-      color: var(--primary);
-
-      font-size: 12px;
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      background: #dbeafe;
+      color: #2563eb;
       font-weight: 800;
-
-      margin-bottom: 10px;
+      margin-bottom: 16px;
     }
 
     .project-card h3 {
-      color: var(--navy);
-
-      font-size: 19px;
-
-      margin-bottom: 13px;
-    }
-
-    .project-card p {
-      color: var(--muted);
-
-      font-size: 13px;
-
+      color: #111827;
+      font-size: 21px;
       margin-bottom: 12px;
     }
 
-    .technologies {
-      margin-top: 18px;
-
-      padding-top: 15px;
-
-      border-top: 1px solid var(--border);
+    .project-card p {
+      color: #6b7280;
+      font-size: 15px;
+      margin-bottom: 15px;
     }
 
-    .technologies strong {
-      display: block;
-
-      font-size: 11px;
-      color: var(--navy);
-
-      margin-bottom: 8px;
-    }
-
-    .technology {
-      display: inline-block;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
-      padding: 5px 9px;
-
-      border-radius: 5px;
-
-      font-size: 10px;
+    .tech-stack {
+      color: #2563eb;
+      font-size: 14px;
       font-weight: 700;
-
-      margin: 3px;
+      margin-bottom: 18px;
     }
 
     .project-links {
-      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .project-links a {
-      color: var(--primary);
-
-      font-size: 12px;
+    .project-link {
+      padding: 8px 14px;
+      background: #2563eb;
+      color: white;
+      border-radius: 6px;
+      font-size: 13px;
       font-weight: 700;
-
-      margin-right: 18px;
+      transition: 0.3s ease;
     }
 
-    /* EDUCATION */
+    .project-link:hover {
+      background: #1d4ed8;
+    }
 
-    #education {
+    .project-link.outline {
+      background: white;
+      color: #2563eb;
+      border: 1px solid #2563eb;
+    }
+
+    .project-link.outline:hover {
+      background: #eff6ff;
+    }
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .education {
       background: #f8fafc;
     }
 
-    .education-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+    .education-list {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
       gap: 20px;
     }
 
     .education-card {
       background: white;
-
-      border: 1px solid var(--border);
-      border-radius: 16px;
-
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
       padding: 25px;
-
-      transition: 0.3s;
-    }
-
-    .education-card:hover {
-      transform: translateY(-4px);
-
-      box-shadow:
-        0 15px 30px
-        rgba(15, 23, 42, 0.07);
-    }
-
-    .education-icon {
-      width: 45px;
-      height: 45px;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
       display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 12px;
-
-      margin-bottom: 18px;
-
-      font-size: 20px;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
     }
 
     .education-card h3 {
-      color: var(--navy);
-
-      font-size: 15px;
-
-      margin-bottom: 8px;
+      color: #111827;
+      font-size: 19px;
+      margin-bottom: 7px;
     }
 
     .education-card p {
-      color: var(--muted);
-
-      font-size: 12px;
-
-      margin: 4px 0;
+      color: #6b7280;
+      font-size: 15px;
     }
 
-    .education-card .score {
-      color: var(--primary);
-
-      font-weight: 800;
-
-      margin-top: 10px;
+    .education-year {
+      color: #2563eb;
+      font-weight: 700;
+      white-space: nowrap;
+      font-size: 14px;
     }
 
-    /* CERTIFICATIONS */
+    .cgpa {
+      margin-top: 8px;
+      font-weight: 700;
+      color: #374151 !important;
+    }
 
-    #certifications {
+    /* =========================
+       CERTIFICATIONS
+    ========================= */
+
+    .certifications {
       background: white;
     }
 
-    .certifications-grid {
+    .certification-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .certification {
+    .certification-card {
       padding: 25px;
-
-      border: 1px solid var(--border);
-
-      border-radius: 16px;
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 18px;
-
-      transition: 0.3s;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      text-align: center;
+      transition: 0.3s ease;
     }
 
-    .certification:hover {
-      transform: translateY(-4px);
-
-      box-shadow:
-        0 15px 30px
-        rgba(15, 23, 42, 0.07);
+    .certification-card:hover {
+      transform: translateY(-5px);
+      border-color: #bfdbfe;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     }
 
-    .cert-icon {
-      width: 48px;
-      height: 48px;
-
-      border-radius: 12px;
-
-      background: var(--blue-light);
-      color: var(--primary);
-
+    .certification-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      background: #dbeafe;
       display: flex;
-
       align-items: center;
       justify-content: center;
-
-      font-size: 21px;
-
-      flex-shrink: 0;
+      color: #2563eb;
+      font-size: 22px;
+      font-weight: bold;
     }
 
-    .certification h3 {
-      color: var(--navy);
-
-      font-size: 13px;
-
-      margin-bottom: 3px;
+    .certification-card h3 {
+      font-size: 17px;
+      color: #111827;
     }
 
-    .certification p {
-      color: var(--muted);
+    /* =========================
+       CONTACT
+    ========================= */
 
-      font-size: 11px;
-    }
-
-    /* CONTACT */
-
-    #contact {
-      background: var(--navy);
-      color: white;
+    .contact {
+      background: #eff6ff;
     }
 
     .contact-container {
-      max-width: 1100px;
-
+      max-width: 850px;
       margin: auto;
-
-      display: flex;
-
-      justify-content: space-between;
-
-      align-items: center;
-
-      gap: 40px;
+      text-align: center;
     }
 
-    .contact-intro h2 {
-      font-size: 32px;
-      margin-bottom: 8px;
+    .contact-container h2 {
+      font-size: 36px;
+      color: #111827;
+      margin-bottom: 12px;
     }
 
-    .contact-intro p {
-      color: #94a3b8;
-      font-size: 14px;
+    .contact-container > p {
+      color: #6b7280;
+      margin-bottom: 30px;
+      font-size: 16px;
     }
 
     .contact-links {
       display: flex;
-
-      flex-wrap: wrap;
-
+      justify-content: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .contact-link {
-      color: white;
-
-      border: 1px solid #334155;
-
-      padding: 10px 15px;
-
+      background: white;
+      border: 1px solid #dbeafe;
+      color: #2563eb;
+      padding: 12px 18px;
       border-radius: 8px;
-
-      font-size: 12px;
-
-      transition: 0.3s;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.3s ease;
     }
 
     .contact-link:hover {
-      background: var(--primary);
-
-      border-color: var(--primary);
+      background: #2563eb;
+      color: white;
+      transform: translateY(-2px);
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      background: #020617;
-
-      color: #64748b;
-
+      background: #111827;
+      color: #9ca3af;
       text-align: center;
-
-      padding: 20px;
-
-      font-size: 11px;
+      padding: 25px;
+      font-size: 14px;
     }
 
-    /* RESPONSIVE */
+    footer strong {
+      color: white;
+    }
 
-    @media (max-width: 1000px) {
+    /* =========================
+       RESPONSIVE
+    ========================= */
 
+    @media (max-width: 900px) {
       .hero-container {
-        grid-template-columns: 0.7fr 1.3fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 45px;
       }
 
-      .hero-contact {
-        grid-column: 1 / -1;
-
-        border-left: none;
-
-        border-top: 1px solid var(--border);
-
-        padding-left: 0;
-
-        padding-top: 25px;
-
+      .hero-content {
         display: flex;
-
-        justify-content: space-between;
-
-        gap: 20px;
+        flex-direction: column;
+        align-items: center;
       }
 
-      .contact-item {
-        margin-bottom: 0;
+      .hero-description {
+        max-width: 700px;
       }
 
-      .education-grid,
-      .certifications-grid {
-        grid-template-columns:
-          repeat(2, 1fr);
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 750px) {
-
-      nav {
-        height: auto;
-
-        padding: 18px 20px;
-
+    @media (max-width: 700px) {
+      .nav-container {
         flex-direction: column;
-
-        gap: 15px;
+        gap: 12px;
       }
 
-      nav ul {
-        gap: 14px;
-
+      .nav-links {
+        gap: 15px;
         flex-wrap: wrap;
-
         justify-content: center;
+      }
+
+      .nav-links a {
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: auto;
       }
 
       .hero-container {
-        grid-template-columns: 1fr;
-
-        text-align: center;
-
         padding-top: 55px;
+        padding-bottom: 55px;
       }
 
-      .photo-container {
-        order: 1;
-      }
-
-      .hero-text {
-        order: 2;
-      }
-
-      .hero-contact {
-        order: 3;
-
-        display: grid;
-
-        grid-template-columns:
-          repeat(2, 1fr);
-
-        text-align: left;
-      }
-
-      .hero-text p {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .skill-groups,
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .education-grid,
-      .certifications-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contact-container {
-        flex-direction: column;
-
-        text-align: center;
-      }
-
-      .contact-links {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-
-      .hero-text h1 {
+      .hero-content h1 {
         font-size: 42px;
       }
 
-      .hero-text h2 {
+      .hero-title {
+        font-size: 21px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .photo-wrapper {
+        width: 280px;
+        height: 330px;
+      }
+
+      section {
+        padding: 65px 20px;
+      }
+
+      .section-heading h2,
+      .contact-container h2 {
+        font-size: 30px;
+      }
+
+      .skills-grid,
+      .projects-grid,
+      .certification-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .education-card {
+        flex-direction: column;
+      }
+
+      .education-year {
+        white-space: normal;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .hero-content h1 {
+        font-size: 36px;
+      }
+
+      .hero-title {
         font-size: 19px;
       }
 
       .photo-wrapper {
-        width: 240px;
+        width: 250px;
         height: 300px;
       }
 
-      .hero-contact {
-        grid-template-columns: 1fr;
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
       }
 
-      section {
-        padding: 65px 18px;
-      }
-
-      .section-heading h2 {
-        font-size: 29px;
+      .btn {
+        width: 100%;
+        text-align: center;
       }
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-<!-- NAVIGATION -->
-
-<header>
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <nav>
+    <div class="nav-container">
 
-    <a href="#home" class="logo">
-      Koteeswari <span>R</span>
-    </a>
+      <a href="#home" class="logo">
+        Koteeswari R
+      </a>
 
-    <ul>
+      <ul class="nav-links">
+        <li>
+          <a href="#home">Home</a>
+        </li>
 
-      <li>
-        <a href="#home">Home</a>
-      </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
 
-      <li>
-        <a href="#about">About</a>
-      </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
 
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
 
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
 
-      <li>
-        <a href="#education">Education</a>
-      </li>
+        <li>
+          <a href="#certifications">Certifications</a>
+        </li>
 
-      <li>
-        <a href="#certifications">Certifications</a>
-      </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
 
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-
-    </ul>
-
+    </div>
   </nav>
 
-</header>
 
+  <!-- =========================
+       HERO
+  ========================= -->
 
-<!-- HERO -->
+  <section class="hero" id="home">
 
-<section class="hero" id="home">
+    <div class="hero-container">
 
-  <div class="hero-container">
+      <div class="hero-content">
 
+        <h1>
+          Hi, I'm <span>Koteeswari R</span>
+        </h1>
 
-    <!-- PHOTO -->
-
-    <div class="photo-container">
-
-      <div class="photo-wrapper">
-
-        <!-- YOUR PHOTO -->
-
-        <img
-          src="profile.jpeg"
-          alt="Koteeswari R"
-          class="profile-photo">
-
-      </div>
-
-    </div>
-
-
-    <!-- INTRODUCTION -->
-
-    <div class="hero-text">
-
-      <span class="tag">
-        SOFTWARE ENGINEERING STUDENT
-      </span>
-
-      <h1>
-        Koteeswari <span>R</span>
-      </h1>
-
-      <h2>
-        Aspiring Software Developer
-      </h2>
-
-      <p>
-        Software Engineering student with strong problem-solving,
-        analytical, and programming skills. Interested in building
-        technology-driven products by analyzing user needs,
-        working with data, automating workflows, and developing
-        scalable solutions.
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="#projects"
-           class="btn btn-primary">
-          View Projects
-        </a>
-
-        <a href="#contact"
-           class="btn btn-outline">
-          Contact Me
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <!-- CONTACT -->
-
-    <div class="hero-contact">
-
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          📍
+        <div class="hero-title">
+          Aspiring Software Developer
         </div>
 
-        <div>
-
-          <span class="contact-label">
-            Location
-          </span>
-
-          <span class="contact-value">
-            Paradarami, Tamil Nadu
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          ✉
-        </div>
-
-        <div>
-
-          <span class="contact-label">
-            Email
-          </span>
-
-          <span class="contact-value">
-
-            <a href="mailto:kotikoteeswarikotikoteeswari@gmail.com">
-              Email Me
-            </a>
-
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          in
-        </div>
-
-        <div>
-
-          <span class="contact-label">
-            LinkedIn
-          </span>
-
-          <span class="contact-value">
-
-            <a
-              href="https://www.linkedin.com/in/koteeswari-r-b520653ab"
-              target="_blank">
-
-              LinkedIn Profile
-
-            </a>
-
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="contact-item">
-
-        <div class="contact-icon">
-          GH
-        </div>
-
-        <div>
-
-          <span class="contact-label">
-            GitHub
-          </span>
-
-          <span class="contact-value">
-
-            <a
-              href="https://github.com/KoteeswariR1822"
-              target="_blank">
-
-              GitHub Profile
-
-            </a>
-
-          </span>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-  <div class="section-container">
-
-    <div class="section-heading">
-
-      <div class="small-title">
-        ABOUT ME
-      </div>
-
-      <h2>
-        A little about <span>me</span>
-      </h2>
-
-      <div class="line"></div>
-
-    </div>
-
-
-    <div class="about-grid">
-
-
-      <div class="about-text">
-
-        <p>
-          I am currently pursuing an Integrated M.Tech in
-          Software Engineering at Vellore Institute of Technology,
-          Vellore.
+        <p class="hero-description">
+          Integrated M.Tech Software Engineering student with a strong
+          interest in software development, problem solving, artificial
+          intelligence and building practical technology solutions.
+          I enjoy learning new technologies and transforming ideas into
+          useful applications.
         </p>
 
-        <p>
-          I have strong problem-solving, analytical and programming
-          skills, with an interest in software development,
-          data-driven solutions, automation and AI tools.
-        </p>
+        <div class="hero-buttons">
+
+          <a
+            href="#projects"
+            class="btn btn-primary"
+          >
+            View My Projects
+          </a>
+
+          <a
+            href="#contact"
+            class="btn btn-secondary"
+          >
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PROFILE PHOTO -->
+
+      <div class="hero-image">
+
+        <div class="photo-wrapper">
+
+          <img
+            src="https://koteeswarir1822.github.io/profile.jpeg?v=2"
+            alt="Koteeswari R"
+            class="profile-photo"
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================= -->
+
+  <section class="about" id="about">
+
+    <div class="section-container">
+
+      <div class="section-heading">
+
+        <h2>About Me</h2>
 
         <p>
-          I enjoy building practical applications, learning new
-          technologies and transforming ideas into useful
-          technology-driven solutions.
+          A motivated student passionate about technology and software development
         </p>
 
       </div>
 
 
-      <div class="about-highlights">
+      <div class="about-content">
 
+        <p>
+          I am pursuing an Integrated M.Tech in Software Engineering
+          at Vellore Institute of Technology, Vellore, with a CGPA of
+          8.26/10.
+        </p>
 
-        <div class="highlight">
+        <p>
+          My technical interests include Java, Python, SQL, web
+          development, artificial intelligence and problem solving.
+          I have worked on academic and personal projects involving
+          AI applications, cloud storage, computer vision and
+          adaptive user interfaces.
+        </p>
 
-          <div class="highlight-icon">
-            💡
-          </div>
-
-          <div>
-
-            <h4>
-              Problem Solver
-            </h4>
-
-            <p>
-              Turning ideas into practical solutions
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="highlight">
-
-          <div class="highlight-icon">
-            💻
-          </div>
-
-          <div>
-
-            <h4>
-              Software Development
-            </h4>
-
-            <p>
-              Building useful technology-driven applications
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="highlight">
-
-          <div class="highlight-icon">
-            🤖
-          </div>
-
-          <div>
-
-            <h4>
-              AI Enthusiast
-            </h4>
-
-            <p>
-              Exploring AI and machine learning applications
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="highlight">
-
-          <div class="highlight-icon">
-            📚
-          </div>
-
-          <div>
-
-            <h4>
-              Continuous Learner
-            </h4>
-
-            <p>
-              Always learning and improving technical skills
-            </p>
-
-          </div>
-
-        </div>
-
+        <p>
+          I am continuously improving my programming, software
+          engineering and analytical skills while looking for
+          opportunities to contribute to real-world software projects.
+        </p>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- SKILLS -->
+  <!-- =========================
+       SKILLS
+  ========================= -->
 
-<section id="skills">
+  <section class="skills" id="skills">
 
-  <div class="section-container">
+    <div class="section-container">
 
-    <div class="section-heading">
+      <div class="section-heading">
 
-      <div class="small-title">
-        TECHNICAL SKILLS
+        <h2>Technical Skills</h2>
+
+        <p>
+          Technologies, programming concepts and tools I work with
+        </p>
+
       </div>
 
-      <h2>
-        Tools & <span>Technologies</span>
-      </h2>
 
-      <div class="line"></div>
+      <div class="skills-grid">
 
-    </div>
+        <div class="skill-card">
 
+          <h3>Programming Languages</h3>
 
-    <div class="skill-groups">
-
-
-      <div class="skill-group">
-
-        <h3>
-          Programming Languages
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C</span>
+          <p>
+            Java, Python, C
+          </p>
 
         </div>
 
-      </div>
 
+        <div class="skill-card">
 
-      <div class="skill-group">
+          <h3>Database</h3>
 
-        <h3>
-          Database & Analytics
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">Basic Excel</span>
+          <p>
+            SQL, MySQL
+          </p>
 
         </div>
 
-      </div>
 
+        <div class="skill-card">
 
-      <div class="skill-group">
+          <h3>Core Concepts</h3>
 
-        <h3>
-          Computer Science Fundamentals
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">
-            Data Structures & Algorithms
-          </span>
-
-          <span class="skill-tag">
-            Object-Oriented Programming
-          </span>
-
-          <span class="skill-tag">
-            DBMS
-          </span>
-
-          <span class="skill-tag">
-            Operating Systems
-          </span>
+          <p>
+            Data Structures and Algorithms,
+            Object-Oriented Programming,
+            DBMS, Operating Systems
+          </p>
 
         </div>
 
-      </div>
+
+        <div class="skill-card">
+
+          <h3>AI & Machine Learning</h3>
+
+          <p>
+            Machine Learning, Computer Vision,
+            OpenCV, YOLO, Pandas
+          </p>
+
+        </div>
 
 
-      <div class="skill-group">
+        <div class="skill-card">
 
-        <h3>
-          Product & Development
-        </h3>
+          <h3>Development Tools</h3>
 
-        <div class="skill-tags">
+          <p>
+            Git, GitHub, VS Code,
+            Google Colab, Streamlit
+          </p>
 
-          <span class="skill-tag">
-            Product Thinking
-          </span>
+        </div>
 
-          <span class="skill-tag">
-            Problem Solving
-          </span>
 
-          <span class="skill-tag">
+        <div class="skill-card">
+
+          <h3>Product & Problem Solving</h3>
+
+          <p>
+            Product Thinking, Problem Solving,
             Technical Documentation
-          </span>
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>Generative AI Tools</h3>
+
+          <p>
+            ChatGPT, Claude, Gemini,
+            GitHub Copilot
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>Web Development</h3>
+
+          <p>
+            HTML, CSS, JavaScript,
+            React, TypeScript, Vite
+          </p>
+
+        </div>
+
+
+        <div class="skill-card">
+
+          <h3>Excel</h3>
+
+          <p>
+            Basic Excel, VLOOKUP,
+            INDEX/MATCH, Sorting and Filtering
+          </p>
 
         </div>
 
       </div>
-
-
-      <div class="skill-group">
-
-        <h3>
-          AI Productivity Tools
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">ChatGPT</span>
-          <span class="skill-tag">Claude</span>
-          <span class="skill-tag">Gemini</span>
-          <span class="skill-tag">GitHub Copilot</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="skill-group">
-
-        <h3>
-          Libraries & Frameworks
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">Streamlit</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">OpenCV</span>
-          <span class="skill-tag">YOLO</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="skill-group">
-
-        <h3>
-          Development Tools
-        </h3>
-
-        <div class="skill-tags">
-
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Google Colab</span>
-
-        </div>
-
-      </div>
-
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- PROJECTS -->
+  <!-- =========================
+       PROJECTS
+  ========================= -->
 
-<section id="projects">
+  <section class="projects" id="projects">
 
-  <div class="section-container">
+    <div class="section-container">
 
-    <div class="section-heading">
+      <div class="section-heading">
 
-      <div class="small-title">
-        PROJECTS
+        <h2>Projects</h2>
+
+        <p>
+          Selected academic and software development projects
+        </p>
+
       </div>
 
-      <h2>
-        My <span>Projects</span>
-      </h2>
 
-      <div class="line"></div>
+      <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            01
+          </div>
+
+          <h3>
+            AI-Based Project Idea Novelty Checker
+          </h3>
+
+          <p>
+            Developed an AI-based application that evaluates project
+            ideas and helps determine their novelty by comparing
+            semantic similarity between project descriptions.
+          </p>
+
+          <div class="tech-stack">
+            Python · Streamlit · Sentence Transformers · Pandas · SQL
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            02
+          </div>
+
+          <h3>
+            Secure Cloud File Storage Using Hybrid Cryptography
+          </h3>
+
+          <p>
+            Developed a secure cloud file storage solution using
+            hybrid cryptography, combining AES encryption with RSA
+            for secure key handling and Azure Blob Storage.
+          </p>
+
+          <div class="tech-stack">
+            Python · Azure Blob Storage · AES · RSA
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            03
+          </div>
+
+          <h3>
+            Skin Tone Based Dress Color Suggestion System
+          </h3>
+
+          <p>
+            Built a computer vision based application that analyzes
+            skin tone and provides suitable dress color suggestions
+            using image processing and machine learning techniques.
+          </p>
+
+          <div class="tech-stack">
+            Python · OpenCV · Streamlit · K-Means · KNN
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card">
+
+          <div class="project-number">
+            04
+          </div>
+
+          <h3>
+            Adaptify — Adaptive Ad Studio
+          </h3>
+
+          <p>
+            Built an adaptive advertisement studio that automatically
+            adapts a single advertisement across Desktop, Tablet,
+            Mobile, Square and Banner surfaces using a
+            constraint-based layout engine.
+          </p>
+
+          <div class="tech-stack">
+            React · TypeScript · Vite · CSS
+          </div>
+
+          <div class="project-links">
+
+            <a
+              href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link outline"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
 
+  </section>
 
-    <div class="projects-grid">
 
+  <!-- =========================
+       EDUCATION
+  ========================= -->
 
-      <div class="project-card">
+  <section class="education" id="education">
 
-        <div class="project-number">
-          PROJECT 01
-        </div>
+    <div class="section-container">
 
-        <h3>
-          AI-Based Project Idea Novelty Checker
-        </h3>
+      <div class="section-heading">
 
-        <p>
-          Developed an AI-powered application to analyze user
-          project ideas using NLP similarity analysis and classify
-          them as Novel, Similar, or Existing.
-        </p>
+        <h2>Education</h2>
 
         <p>
-          Automated data processing, embedding generation,
-          similarity scoring, and result visualization using
-          Python and Streamlit.
+          Academic background
         </p>
-
-        <div class="technologies">
-
-          <strong>
-            TECHNOLOGIES
-          </strong>
-
-          <span class="technology">Python</span>
-          <span class="technology">Streamlit</span>
-          <span class="technology">Sentence Transformers</span>
-          <span class="technology">Pandas</span>
-          <span class="technology">SQL</span>
-
-        </div>
 
       </div>
 
 
-      <div class="project-card">
-
-        <div class="project-number">
-          PROJECT 02
-        </div>
-
-        <h3>
-          Secure Cloud File Storage Using Hybrid Cryptography
-        </h3>
-
-        <p>
-          Built a secure cloud storage solution to automate
-          encrypted file upload, storage, and retrieval workflows.
-        </p>
-
-        <p>
-          Implemented AES and RSA encryption techniques with
-          Azure Blob Storage to improve data security.
-        </p>
-
-        <div class="technologies">
-
-          <strong>
-            TECHNOLOGIES
-          </strong>
-
-          <span class="technology">Python</span>
-          <span class="technology">Azure Blob Storage</span>
-          <span class="technology">AES</span>
-          <span class="technology">RSA</span>
-
-        </div>
-
-      </div>
+      <div class="education-list">
 
 
-      <div class="project-card">
+        <div class="education-card">
 
-        <div class="project-number">
-          PROJECT 03
-        </div>
+          <div>
 
-        <h3>
-          Skin Tone Based Dress Color Suggestion System
-        </h3>
+            <h3>
+              Integrated M.Tech in Software Engineering
+            </h3>
 
-        <p>
-          Developed an image-based recommendation system to
-          suggest suitable dress colors using machine learning
-          techniques.
-        </p>
+            <p>
+              Vellore Institute of Technology, Vellore
+            </p>
 
-        <p>
-          Applied image processing, clustering and classification
-          methods with an interactive Streamlit application.
-        </p>
+            <p class="cgpa">
+              CGPA: 8.26 / 10
+            </p>
 
-        <div class="technologies">
+          </div>
 
-          <strong>
-            TECHNOLOGIES
-          </strong>
-
-          <span class="technology">Python</span>
-          <span class="technology">OpenCV</span>
-          <span class="technology">Streamlit</span>
-          <span class="technology">K-Means</span>
-          <span class="technology">KNN</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="project-card">
-
-        <div class="project-number">
-          PROJECT 04
-        </div>
-
-        <h3>
-          Adaptify — Adaptive Ad Studio
-        </h3>
-
-        <p>
-          Developed an adaptive advertisement layout engine that
-          adapts a single advertisement across Desktop, Tablet,
-          Mobile, Square and Banner surfaces.
-        </p>
-
-        <p>
-          Built a responsive frontend with live preview, adaptive
-          layout inspection and export functionality.
-        </p>
-
-        <div class="technologies">
-
-          <strong>
-            TECHNOLOGIES
-          </strong>
-
-          <span class="technology">React</span>
-          <span class="technology">TypeScript</span>
-          <span class="technology">Vite</span>
-          <span class="technology">CSS</span>
+          <div class="education-year">
+            2022 – 2027
+          </div>
 
         </div>
 
 
-        <div class="project-links">
+        <div class="education-card">
 
-          <a
-            href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
-            target="_blank">
-            GitHub →
-          </a>
+          <div>
 
-          <a
-            href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
-            target="_blank">
-            Live Demo →
-          </a>
+            <h3>
+              Class XII
+            </h3>
+
+            <p>
+              Vidhyalakshmi Matriculation Higher Secondary School
+            </p>
+
+            <p class="cgpa">
+              Percentage: 93.6%
+            </p>
+
+          </div>
+
+          <div class="education-year">
+            2020 – 2022
+          </div>
+
+        </div>
+
+
+        <div class="education-card">
+
+          <div>
+
+            <h3>
+              Class X
+            </h3>
+
+            <p>
+              Sri Ramakrishna Garden Matriculation School
+            </p>
+
+            <p class="cgpa">
+              Percentage: 98.8%
+            </p>
+
+          </div>
+
+          <div class="education-year">
+            2019 – 2020
+          </div>
 
         </div>
 
       </div>
-
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- EDUCATION -->
+  <!-- =========================
+       CERTIFICATIONS
+  ========================= -->
 
-<section id="education">
+  <section class="certifications" id="certifications">
 
-  <div class="section-container">
+    <div class="section-container">
 
-    <div class="section-heading">
+      <div class="section-heading">
 
-      <div class="small-title">
-        EDUCATION
-      </div>
-
-      <h2>
-        Academic <span>Background</span>
-      </h2>
-
-      <div class="line"></div>
-
-    </div>
-
-
-    <div class="education-grid">
-
-
-      <div class="education-card">
-
-        <div class="education-icon">
-          🎓
-        </div>
-
-        <h3>
-          Vellore Institute of Technology, Vellore
-        </h3>
+        <h2>Certifications</h2>
 
         <p>
-          Integrated M.Tech in Software Engineering
-        </p>
-
-        <p>
-          2022 – 2027
-        </p>
-
-        <p class="score">
-          CGPA: 8.26 / 10
+          Professional learning and certifications
         </p>
 
       </div>
 
 
-      <div class="education-card">
-
-        <div class="education-icon">
-          🏫
-        </div>
-
-        <h3>
-          Vidhyalakshmi Matriculation
-          Higher Secondary School
-        </h3>
-
-        <p>
-          Higher Secondary School (Class XII)
-        </p>
-
-        <p>
-          2020 – 2022
-        </p>
-
-        <p class="score">
-          Percentage: 93.6%
-        </p>
-
-      </div>
+      <div class="certification-grid">
 
 
-      <div class="education-card">
+        <div class="certification-card">
 
-        <div class="education-icon">
-          🏫
-        </div>
-
-        <h3>
-          Sri Ramakrishna Garden
-          Matriculation School
-        </h3>
-
-        <p>
-          Secondary School (Class X)
-        </p>
-
-        <p>
-          2019 – 2020
-        </p>
-
-        <p class="score">
-          Percentage: 98.8%
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- CERTIFICATIONS -->
-
-<section id="certifications">
-
-  <div class="section-container">
-
-    <div class="section-heading">
-
-      <div class="small-title">
-        CERTIFICATIONS
-      </div>
-
-      <h2>
-        Courses & <span>Certifications</span>
-      </h2>
-
-      <div class="line"></div>
-
-    </div>
-
-
-    <div class="certifications-grid">
-
-
-      <div class="certification">
-
-        <div class="cert-icon">
-          G
-        </div>
-
-        <div>
+          <div class="certification-icon">
+            AI
+          </div>
 
           <h3>
             Google Artificial Intelligence Essentials
           </h3>
 
-          <p>
-            Google
-          </p>
-
         </div>
 
-      </div>
 
+        <div class="certification-card">
 
-      <div class="certification">
-
-        <div class="cert-icon">
-          G
-        </div>
-
-        <div>
+          <div class="certification-icon">
+            ML
+          </div>
 
           <h3>
             Google Machine Learning
           </h3>
 
-          <p>
-            Google
-          </p>
-
         </div>
 
-      </div>
 
+        <div class="certification-card">
 
-      <div class="certification">
-
-        <div class="cert-icon">
-          🏆
-        </div>
-
-        <div>
+          <div class="certification-icon">
+            INT
+          </div>
 
           <h3>
             Machine Learning Internship
           </h3>
 
-          <p>
+          <p style="margin-top: 8px; color: #6b7280; font-size: 14px;">
             Rinex Technology
           </p>
 
@@ -1933,74 +1290,86 @@
 
       </div>
 
-
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- CONTACT -->
+  <!-- =========================
+       CONTACT
+  ========================= -->
 
-<section id="contact">
+  <section class="contact" id="contact">
 
-  <div class="contact-container">
-
-    <div class="contact-intro">
+    <div class="contact-container">
 
       <h2>
         Let's Connect
       </h2>
 
       <p>
-        Feel free to reach out for opportunities,
-        collaborations or professional discussions.
+        I am open to learning opportunities, internships and
+        software development roles.
       </p>
 
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:kotikoteeswarikotikoteeswari@gmail.com"
+          class="contact-link"
+        >
+          Email
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/koteeswari-r-b520653ab"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/KoteeswariR1822"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-link"
+        >
+          Adaptify
+        </a>
+
+      </div>
+
     </div>
 
-
-    <div class="contact-links">
-
-      <a
-        class="contact-link"
-        href="mailto:kotikoteeswarikotikoteeswari@gmail.com">
-        ✉ Email
-      </a>
+  </section>
 
 
-      <a
-        class="contact-link"
-        href="https://www.linkedin.com/in/koteeswari-r-b520653ab"
-        target="_blank">
-        in LinkedIn
-      </a>
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
+  <footer>
 
-      <a
-        class="contact-link"
-        href="https://github.com/KoteeswariR1822"
-        target="_blank">
-        GitHub
-      </a>
+    <p>
+      © 2026
+      <strong>Koteeswari R</strong>.
+      All rights reserved.
+    </p>
 
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  © 2026 Koteeswari R · Software Engineering Student
-
-</footer>
+  </footer>
 
 
 </body>
-
 </html>

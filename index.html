@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Koteeswari R | Software Engineering Student</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f8fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      padding: 18px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #60a5fa;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 8%;
+      background: linear-gradient(135deg, #eef2ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 25px;
+      color: #2563eb;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #4b5563;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px 22px;
+      margin-right: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .secondary {
+      border: 2px solid #2563eb;
+      color: #2563eb;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #111827;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .skill {
+      background: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      color: #2563eb;
+      margin-bottom: 12px;
+    }
+
+    .project p {
+      color: #4b5563;
+      margin-bottom: 15px;
+    }
+
+    .tech {
+      font-size: 14px;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    .education-card,
+    .certification-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .education-card h3,
+    .certification-card h3 {
+      color: #2563eb;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin: 12px 0;
+    }
+
+    .contact a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #030712;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 700px) {
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+  <nav>
+    <h2>Koteeswari R</h2>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>Koteeswari R</h1>
+
+    <h2>Software Engineering Student</h2>
+
+    <p>
+      Software Engineering student with strong problem-solving, analytical,
+      and programming skills. Interested in building technology-driven
+      products by analyzing user needs, working with data, automating
+      workflows, and developing scalable solutions.
+    </p>
+
+    <div class="buttons">
+
+      <a class="primary" href="#projects">
+        View Projects
+      </a>
+
+      <a class="secondary" href="#contact">
+        Contact Me
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="about">
+
+    <p>
+      I am currently pursuing an Integrated M.Tech in Software Engineering
+      at Vellore Institute of Technology, Vellore. I am interested in
+      software development, AI tools, data-driven solutions, automation,
+      and technology-driven products.
+    </p>
+
+    <br>
+
+    <p>
+      I enjoy solving problems, learning new technologies and developing
+      practical applications using programming, machine learning and
+      software development tools.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+  <h2>Technical Skills</h2>
+
+  <div class="skills">
+
+    <div class="skill">Java</div>
+    <div class="skill">Python</div>
+    <div class="skill">C</div>
+
+    <div class="skill">SQL</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Basic Excel</div>
+
+    <div class="skill">Data Structures & Algorithms</div>
+    <div class="skill">Object-Oriented Programming</div>
+    <div class="skill">DBMS</div>
+    <div class="skill">Operating Systems</div>
+
+    <div class="skill">Product Thinking</div>
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Technical Documentation</div>
+
+    <div class="skill">ChatGPT</div>
+    <div class="skill">Claude</div>
+    <div class="skill">Gemini</div>
+    <div class="skill">GitHub Copilot</div>
+
+    <div class="skill">Streamlit</div>
+    <div class="skill">Pandas</div>
+    <div class="skill">OpenCV</div>
+    <div class="skill">YOLO</div>
+
+    <div class="skill">Git</div>
+    <div class="skill">GitHub</div>
+    <div class="skill">VS Code</div>
+    <div class="skill">Google Colab</div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+
+    <!-- PROJECT 1 -->
+
+    <div class="project">
+
+      <h3>AI-Based Project Idea Novelty Checker</h3>
+
+      <p>
+        Developed an AI-powered application to analyze user project ideas
+        using NLP similarity analysis and classify them as Novel, Similar,
+        or Existing.
+      </p>
+
+      <p>
+        Automated data processing, embedding generation, similarity scoring,
+        and result visualization using Python and Streamlit.
+      </p>
+
+      <p class="tech">
+        Technologies: Python, Streamlit, Sentence Transformers,
+        Pandas, SQL Concepts
+      </p>
+
+    </div>
+
+
+    <!-- PROJECT 2 -->
+
+    <div class="project">
+
+      <h3>Secure Cloud File Storage Using Hybrid Cryptography</h3>
+
+      <p>
+        Built a secure cloud storage solution to automate encrypted file
+        upload, storage and retrieval workflows.
+      </p>
+
+      <p>
+        Implemented AES and RSA encryption techniques with Azure Blob
+        Storage to improve data security.
+      </p>
+
+      <p class="tech">
+        Technologies: Python, Azure Blob Storage, AES, RSA
+      </p>
+
+    </div>
+
+
+    <!-- PROJECT 3 -->
+
+    <div class="project">
+
+      <h3>Skin Tone Based Dress Color Suggestion System</h3>
+
+      <p>
+        Developed an image-based recommendation system to suggest suitable
+        dress colors using machine learning techniques.
+      </p>
+
+      <p>
+        Applied image processing, clustering and classification methods
+        with an interactive Streamlit application.
+      </p>
+
+      <p class="tech">
+        Technologies: Python, OpenCV, Streamlit, K-Means, KNN
+      </p>
+
+    </div>
+
+
+    <!-- PROJECT 4 -->
+
+    <div class="project">
+
+      <h3>Adaptify — Adaptive Ad Studio</h3>
+
+      <p>
+        An adaptive advertisement layout engine that adapts a single
+        advertisement across multiple surfaces including Desktop, Tablet,
+        Mobile, Square and Banner.
+      </p>
+
+      <p class="tech">
+        Technologies: React, TypeScript, Vite, CSS
+      </p>
+
+      <br>
+
+      <a href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
+         target="_blank">
+        GitHub →
+      </a>
+
+      <a href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
+         target="_blank">
+        Live Demo →
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+  <h2>Education</h2>
+
+  <div class="education-card">
+
+    <h3>Vellore Institute of Technology, Vellore</h3>
+
+    <p>
+      Integrated M.Tech in Software Engineering
+    </p>
+
+    <p>
+      2022 – 2027
+    </p>
+
+    <p>
+      <strong>CGPA: 8.26 / 10</strong>
+    </p>
+
+  </div>
+
+
+  <div class="education-card">
+
+    <h3>Vidhyalakshmi Matriculation Higher Secondary School</h3>
+
+    <p>
+      Higher Secondary School (Class XII)
+    </p>
+
+    <p>
+      2020 – 2022
+    </p>
+
+    <p>
+      <strong>Percentage: 93.6%</strong>
+    </p>
+
+  </div>
+
+
+  <div class="education-card">
+
+    <h3>Sri Ramakrishna Garden Matriculation School</h3>
+
+    <p>
+      Secondary School (Class X)
+    </p>
+
+    <p>
+      2019 – 2020
+    </p>
+
+    <p>
+      <strong>Percentage: 98.8%</strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+  <h2>Certifications</h2>
+
+  <div class="certification-card">
+
+    <h3>Google Artificial Intelligence Essentials</h3>
+
+    <p>Google</p>
+
+  </div>
+
+
+  <div class="certification-card">
+
+    <h3>Google Machine Learning</h3>
+
+    <p>Google</p>
+
+  </div>
+
+
+  <div class="certification-card">
+
+    <h3>Machine Learning Internship</h3>
+
+    <p>Rinex Technology</p>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <h2>Contact</h2>
+
+  <p>
+    Location: Paradarami, Tamil Nadu
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:YOUR_EMAIL@gmail.com">
+      YOUR_EMAIL@gmail.com
+    </a>
+  </p>
+
+  <p>
+    Phone: +91 8610665200
+  </p>
+
+  <p>
+    LinkedIn:
+    <a href="YOUR_LINKEDIN_URL" target="_blank">
+      LinkedIn Profile
+    </a>
+  </p>
+
+  <p>
+    GitHub:
+    <a href="https://github.com/KoteeswariR1822" target="_blank">
+      GitHub Profile
+    </a>
+  </p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 Koteeswari R. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>

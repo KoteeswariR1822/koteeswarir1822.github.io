@@ -2,37 +2,22 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
         content="Portfolio of Koteeswari R - Software Engineering Student">
 
   <title>Koteeswari R | Software Engineering Student</title>
 
-
-  <!-- Google Font -->
-
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-
   <style>
-
-    /* =========================================
-       GLOBAL
-    ========================================= */
 
     * {
       margin: 0;
@@ -64,30 +49,22 @@
       text-decoration: none;
     }
 
-
-    /* =========================================
-       NAVBAR
-    ========================================= */
+    /* NAVBAR */
 
     header {
       width: 100%;
       position: sticky;
       top: 0;
       z-index: 1000;
-
       background: rgba(255, 255, 255, 0.96);
-
       backdrop-filter: blur(12px);
-
       border-bottom: 1px solid var(--border);
     }
 
     nav {
       max-width: 1200px;
       margin: auto;
-
       height: 72px;
-
       padding: 0 25px;
 
       display: flex;
@@ -115,7 +92,6 @@
       color: #475569;
       font-size: 14px;
       font-weight: 600;
-
       transition: 0.3s;
     }
 
@@ -123,10 +99,7 @@
       color: var(--primary);
     }
 
-
-    /* =========================================
-       HERO
-    ========================================= */
+    /* HERO */
 
     .hero {
       min-height: calc(100vh - 72px);
@@ -151,25 +124,16 @@
     .hero-container {
       width: 100%;
       max-width: 1200px;
-
       margin: auto;
-
       padding: 80px 25px;
 
       display: grid;
-
-      grid-template-columns:
-        0.8fr 1.5fr 0.9fr;
-
+      grid-template-columns: 0.8fr 1.5fr 0.9fr;
       gap: 50px;
-
       align-items: center;
     }
 
-
-    /* =========================================
-       PROFILE PHOTO
-    ========================================= */
+    /* PROFILE PHOTO */
 
     .photo-container {
       display: flex;
@@ -181,7 +145,6 @@
       height: 350px;
 
       padding: 7px;
-
       border-radius: 30px;
 
       background:
@@ -201,48 +164,36 @@
       height: 100%;
 
       object-fit: cover;
-
       object-position: center top;
 
       border-radius: 24px;
-
       display: block;
-
       background: white;
     }
 
-
-    /* =========================================
-       HERO TEXT
-    ========================================= */
+    /* HERO TEXT */
 
     .hero-text .tag {
       display: inline-block;
 
       padding: 7px 14px;
-
       border-radius: 50px;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       font-size: 12px;
-
       font-weight: 700;
 
       letter-spacing: 0.5px;
-
       margin-bottom: 18px;
     }
 
     .hero-text h1 {
       font-size: 58px;
-
       line-height: 1.1;
 
       color: var(--navy);
-
       margin-bottom: 12px;
 
       font-weight: 800;
@@ -254,50 +205,37 @@
 
     .hero-text h2 {
       font-size: 22px;
-
       color: var(--primary);
 
       margin-bottom: 20px;
-
       font-weight: 600;
     }
 
     .hero-text p {
       color: var(--muted);
-
       font-size: 16px;
 
       max-width: 650px;
-
       margin-bottom: 28px;
     }
 
-
-    /* =========================================
-       BUTTONS
-    ========================================= */
+    /* BUTTONS */
 
     .hero-buttons {
       display: flex;
-
       gap: 12px;
-
       flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
-
       align-items: center;
-
       justify-content: center;
 
       padding: 12px 22px;
-
       border-radius: 8px;
 
       font-size: 14px;
-
       font-weight: 700;
 
       transition: 0.3s;
@@ -305,7 +243,6 @@
 
     .btn-primary {
       background: var(--primary);
-
       color: white;
 
       box-shadow:
@@ -315,42 +252,31 @@
 
     .btn-primary:hover {
       background: var(--primary-dark);
-
       transform: translateY(-2px);
     }
 
     .btn-outline {
       border: 1.5px solid var(--primary);
-
       color: var(--primary);
-
       background: white;
     }
 
     .btn-outline:hover {
       background: var(--primary);
-
       color: white;
     }
 
-
-    /* =========================================
-       HERO CONTACT
-    ========================================= */
+    /* HERO CONTACT */
 
     .hero-contact {
       border-left: 1px solid var(--border);
-
       padding-left: 35px;
     }
 
     .contact-item {
       display: flex;
-
       align-items: flex-start;
-
       gap: 12px;
-
       margin-bottom: 20px;
     }
 
@@ -359,19 +285,15 @@
       height: 38px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       border-radius: 10px;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       font-size: 17px;
-
       flex-shrink: 0;
     }
 
@@ -381,21 +303,15 @@
 
     .contact-label {
       display: block;
-
       color: var(--muted);
-
       font-size: 11px;
-
       margin-bottom: 2px;
     }
 
     .contact-value {
       color: var(--navy);
-
       font-size: 13px;
-
       font-weight: 600;
-
       word-break: break-word;
     }
 
@@ -403,10 +319,7 @@
       color: var(--primary);
     }
 
-
-    /* =========================================
-       COMMON SECTION
-    ========================================= */
+    /* COMMON SECTION */
 
     section {
       padding: 90px 25px;
@@ -414,7 +327,6 @@
 
     .section-container {
       max-width: 1100px;
-
       margin: auto;
     }
 
@@ -426,11 +338,9 @@
       color: var(--primary);
 
       font-size: 12px;
-
       font-weight: 800;
 
       letter-spacing: 2px;
-
       text-transform: uppercase;
 
       margin-bottom: 7px;
@@ -438,9 +348,7 @@
 
     .section-heading h2 {
       font-size: 34px;
-
       color: var(--navy);
-
       font-weight: 800;
     }
 
@@ -450,18 +358,13 @@
 
     .section-heading .line {
       width: 45px;
-
       height: 3px;
 
       background: var(--primary);
-
       margin-top: 12px;
     }
 
-
-    /* =========================================
-       ABOUT
-    ========================================= */
+    /* ABOUT */
 
     #about {
       background: white;
@@ -469,19 +372,15 @@
 
     .about-grid {
       display: grid;
-
       grid-template-columns: 1.2fr 0.8fr;
 
       gap: 50px;
-
       align-items: center;
     }
 
     .about-text p {
       color: var(--muted);
-
       font-size: 16px;
-
       margin-bottom: 18px;
     }
 
@@ -489,7 +388,6 @@
       background: #f8fafc;
 
       border: 1px solid var(--border);
-
       border-radius: 18px;
 
       padding: 30px;
@@ -497,7 +395,6 @@
 
     .highlight {
       display: flex;
-
       gap: 15px;
 
       padding: 15px 0;
@@ -516,38 +413,28 @@
       border-radius: 12px;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       display: flex;
-
       align-items: center;
-
       justify-content: center;
 
       font-size: 19px;
-
       flex-shrink: 0;
     }
 
     .highlight h4 {
       color: var(--navy);
-
       font-size: 14px;
-
       margin-bottom: 2px;
     }
 
     .highlight p {
       color: var(--muted);
-
       font-size: 12px;
     }
 
-
-    /* =========================================
-       SKILLS
-    ========================================= */
+    /* SKILLS */
 
     #skills {
       background: #f8fafc;
@@ -568,7 +455,6 @@
       padding: 25px;
 
       border: 1px solid var(--border);
-
       border-radius: 16px;
 
       transition: 0.3s;
@@ -584,17 +470,13 @@
 
     .skill-group h3 {
       font-size: 16px;
-
       color: var(--navy);
-
       margin-bottom: 15px;
     }
 
     .skill-tags {
       display: flex;
-
       flex-wrap: wrap;
-
       gap: 8px;
     }
 
@@ -608,14 +490,10 @@
       color: #475569;
 
       font-size: 12px;
-
       font-weight: 600;
     }
 
-
-    /* =========================================
-       PROJECTS
-    ========================================= */
+    /* PROJECTS */
 
     #projects {
       background: white;
@@ -634,13 +512,11 @@
       background: white;
 
       border: 1px solid var(--border);
-
       border-radius: 18px;
 
       padding: 28px;
 
       position: relative;
-
       overflow: hidden;
 
       transition: 0.3s;
@@ -655,7 +531,6 @@
       left: 0;
 
       width: 100%;
-
       height: 4px;
 
       background:
@@ -678,7 +553,6 @@
       color: var(--primary);
 
       font-size: 12px;
-
       font-weight: 800;
 
       margin-bottom: 10px;
@@ -712,7 +586,6 @@
       display: block;
 
       font-size: 11px;
-
       color: var(--navy);
 
       margin-bottom: 8px;
@@ -722,7 +595,6 @@
       display: inline-block;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       padding: 5px 9px;
@@ -730,7 +602,6 @@
       border-radius: 5px;
 
       font-size: 10px;
-
       font-weight: 700;
 
       margin: 3px;
@@ -744,16 +615,12 @@
       color: var(--primary);
 
       font-size: 12px;
-
       font-weight: 700;
 
       margin-right: 18px;
     }
 
-
-    /* =========================================
-       EDUCATION
-    ========================================= */
+    /* EDUCATION */
 
     #education {
       background: #f8fafc;
@@ -772,7 +639,6 @@
       background: white;
 
       border: 1px solid var(--border);
-
       border-radius: 16px;
 
       padding: 25px;
@@ -793,13 +659,11 @@
       height: 45px;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       display: flex;
 
       align-items: center;
-
       justify-content: center;
 
       border-radius: 12px;
@@ -833,10 +697,7 @@
       margin-top: 10px;
     }
 
-
-    /* =========================================
-       CERTIFICATIONS
-    ========================================= */
+    /* CERTIFICATIONS */
 
     #certifications {
       background: white;
@@ -882,13 +743,11 @@
       border-radius: 12px;
 
       background: var(--blue-light);
-
       color: var(--primary);
 
       display: flex;
 
       align-items: center;
-
       justify-content: center;
 
       font-size: 21px;
@@ -910,14 +769,10 @@
       font-size: 11px;
     }
 
-
-    /* =========================================
-       CONTACT
-    ========================================= */
+    /* CONTACT */
 
     #contact {
       background: var(--navy);
-
       color: white;
     }
 
@@ -937,13 +792,11 @@
 
     .contact-intro h2 {
       font-size: 32px;
-
       margin-bottom: 8px;
     }
 
     .contact-intro p {
       color: #94a3b8;
-
       font-size: 14px;
     }
 
@@ -975,10 +828,7 @@
       border-color: var(--primary);
     }
 
-
-    /* =========================================
-       FOOTER
-    ========================================= */
+    /* FOOTER */
 
     footer {
       background: #020617;
@@ -992,16 +842,12 @@
       font-size: 11px;
     }
 
-
-    /* =========================================
-       RESPONSIVE
-    ========================================= */
+    /* RESPONSIVE */
 
     @media (max-width: 1000px) {
 
       .hero-container {
-        grid-template-columns:
-          0.7fr 1.3fr;
+        grid-template-columns: 0.7fr 1.3fr;
       }
 
       .hero-contact {
@@ -1031,9 +877,7 @@
         grid-template-columns:
           repeat(2, 1fr);
       }
-
     }
-
 
     @media (max-width: 750px) {
 
@@ -1114,9 +958,7 @@
       .contact-links {
         justify-content: center;
       }
-
     }
-
 
     @media (max-width: 480px) {
 
@@ -1144,7 +986,6 @@
       .section-heading h2 {
         font-size: 29px;
       }
-
     }
 
   </style>
@@ -1155,9 +996,7 @@
 <body>
 
 
-<!-- =========================================
-     NAVIGATION
-========================================== -->
+<!-- NAVIGATION -->
 
 <header>
 
@@ -1204,10 +1043,7 @@
 </header>
 
 
-
-<!-- =========================================
-     HERO
-========================================== -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -1219,6 +1055,8 @@
     <div class="photo-container">
 
       <div class="photo-wrapper">
+
+        <!-- YOUR PHOTO -->
 
         <img
           src="profile.jpeg"
@@ -1249,9 +1087,9 @@
       <p>
         Software Engineering student with strong problem-solving,
         analytical, and programming skills. Interested in building
-        technology-driven products by analyzing user needs, working
-        with data, automating workflows, and developing scalable
-        solutions.
+        technology-driven products by analyzing user needs,
+        working with data, automating workflows, and developing
+        scalable solutions.
       </p>
 
       <div class="hero-buttons">
@@ -1271,7 +1109,7 @@
     </div>
 
 
-    <!-- CONTACT INFORMATION -->
+    <!-- CONTACT -->
 
     <div class="hero-contact">
 
@@ -1310,9 +1148,11 @@
           </span>
 
           <span class="contact-value">
+
             <a href="mailto:kotikoteeswarikotikoteeswari@gmail.com">
               Email Me
             </a>
+
           </span>
 
         </div>
@@ -1385,10 +1225,7 @@
 </section>
 
 
-
-<!-- =========================================
-     ABOUT
-========================================== -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -1531,10 +1368,7 @@
 </section>
 
 
-
-<!-- =========================================
-     SKILLS
-========================================== -->
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -1558,8 +1392,6 @@
     <div class="skill-groups">
 
 
-      <!-- PROGRAMMING -->
-
       <div class="skill-group">
 
         <h3>
@@ -1569,17 +1401,13 @@
         <div class="skill-tags">
 
           <span class="skill-tag">Java</span>
-
           <span class="skill-tag">Python</span>
-
           <span class="skill-tag">C</span>
 
         </div>
 
       </div>
 
-
-      <!-- DATABASE -->
 
       <div class="skill-group">
 
@@ -1590,17 +1418,13 @@
         <div class="skill-tags">
 
           <span class="skill-tag">SQL</span>
-
           <span class="skill-tag">MySQL</span>
-
           <span class="skill-tag">Basic Excel</span>
 
         </div>
 
       </div>
 
-
-      <!-- FUNDAMENTALS -->
 
       <div class="skill-group">
 
@@ -1631,8 +1455,6 @@
       </div>
 
 
-      <!-- PRODUCT -->
-
       <div class="skill-group">
 
         <h3>
@@ -1658,8 +1480,6 @@
       </div>
 
 
-      <!-- AI TOOLS -->
-
       <div class="skill-group">
 
         <h3>
@@ -1668,28 +1488,15 @@
 
         <div class="skill-tags">
 
-          <span class="skill-tag">
-            ChatGPT
-          </span>
-
-          <span class="skill-tag">
-            Claude
-          </span>
-
-          <span class="skill-tag">
-            Gemini
-          </span>
-
-          <span class="skill-tag">
-            GitHub Copilot
-          </span>
+          <span class="skill-tag">ChatGPT</span>
+          <span class="skill-tag">Claude</span>
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">GitHub Copilot</span>
 
         </div>
 
       </div>
 
-
-      <!-- LIBRARIES -->
 
       <div class="skill-group">
 
@@ -1699,28 +1506,15 @@
 
         <div class="skill-tags">
 
-          <span class="skill-tag">
-            Streamlit
-          </span>
-
-          <span class="skill-tag">
-            Pandas
-          </span>
-
-          <span class="skill-tag">
-            OpenCV
-          </span>
-
-          <span class="skill-tag">
-            YOLO
-          </span>
+          <span class="skill-tag">Streamlit</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">YOLO</span>
 
         </div>
 
       </div>
 
-
-      <!-- TOOLS -->
 
       <div class="skill-group">
 
@@ -1730,25 +1524,15 @@
 
         <div class="skill-tags">
 
-          <span class="skill-tag">
-            Git
-          </span>
-
-          <span class="skill-tag">
-            GitHub
-          </span>
-
-          <span class="skill-tag">
-            VS Code
-          </span>
-
-          <span class="skill-tag">
-            Google Colab
-          </span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">Google Colab</span>
 
         </div>
 
       </div>
+
 
     </div>
 
@@ -1757,10 +1541,7 @@
 </section>
 
 
-
-<!-- =========================================
-     PROJECTS
-========================================== -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -1783,8 +1564,6 @@
 
     <div class="projects-grid">
 
-
-      <!-- PROJECT 1 -->
 
       <div class="project-card">
 
@@ -1814,33 +1593,16 @@
             TECHNOLOGIES
           </strong>
 
-          <span class="technology">
-            Python
-          </span>
-
-          <span class="technology">
-            Streamlit
-          </span>
-
-          <span class="technology">
-            Sentence Transformers
-          </span>
-
-          <span class="technology">
-            Pandas
-          </span>
-
-          <span class="technology">
-            SQL Concepts
-          </span>
+          <span class="technology">Python</span>
+          <span class="technology">Streamlit</span>
+          <span class="technology">Sentence Transformers</span>
+          <span class="technology">Pandas</span>
+          <span class="technology">SQL</span>
 
         </div>
 
       </div>
 
-
-
-      <!-- PROJECT 2 -->
 
       <div class="project-card">
 
@@ -1868,29 +1630,15 @@
             TECHNOLOGIES
           </strong>
 
-          <span class="technology">
-            Python
-          </span>
-
-          <span class="technology">
-            Azure Blob Storage
-          </span>
-
-          <span class="technology">
-            AES
-          </span>
-
-          <span class="technology">
-            RSA
-          </span>
+          <span class="technology">Python</span>
+          <span class="technology">Azure Blob Storage</span>
+          <span class="technology">AES</span>
+          <span class="technology">RSA</span>
 
         </div>
 
       </div>
 
-
-
-      <!-- PROJECT 3 -->
 
       <div class="project-card">
 
@@ -1919,33 +1667,16 @@
             TECHNOLOGIES
           </strong>
 
-          <span class="technology">
-            Python
-          </span>
-
-          <span class="technology">
-            OpenCV
-          </span>
-
-          <span class="technology">
-            Streamlit
-          </span>
-
-          <span class="technology">
-            K-Means
-          </span>
-
-          <span class="technology">
-            KNN
-          </span>
+          <span class="technology">Python</span>
+          <span class="technology">OpenCV</span>
+          <span class="technology">Streamlit</span>
+          <span class="technology">K-Means</span>
+          <span class="technology">KNN</span>
 
         </div>
 
       </div>
 
-
-
-      <!-- PROJECT 4 -->
 
       <div class="project-card">
 
@@ -1974,21 +1705,10 @@
             TECHNOLOGIES
           </strong>
 
-          <span class="technology">
-            React
-          </span>
-
-          <span class="technology">
-            TypeScript
-          </span>
-
-          <span class="technology">
-            Vite
-          </span>
-
-          <span class="technology">
-            CSS
-          </span>
+          <span class="technology">React</span>
+          <span class="technology">TypeScript</span>
+          <span class="technology">Vite</span>
+          <span class="technology">CSS</span>
 
         </div>
 
@@ -1998,17 +1718,13 @@
           <a
             href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
             target="_blank">
-
             GitHub →
-
           </a>
 
           <a
             href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
             target="_blank">
-
             Live Demo →
-
           </a>
 
         </div>
@@ -2023,10 +1739,7 @@
 </section>
 
 
-
-<!-- =========================================
-     EDUCATION
-========================================== -->
+<!-- EDUCATION -->
 
 <section id="education">
 
@@ -2049,8 +1762,6 @@
 
     <div class="education-grid">
 
-
-      <!-- VIT -->
 
       <div class="education-card">
 
@@ -2077,8 +1788,6 @@
       </div>
 
 
-      <!-- XII -->
-
       <div class="education-card">
 
         <div class="education-icon">
@@ -2104,8 +1813,6 @@
 
       </div>
 
-
-      <!-- X -->
 
       <div class="education-card">
 
@@ -2140,10 +1847,7 @@
 </section>
 
 
-
-<!-- =========================================
-     CERTIFICATIONS
-========================================== -->
+<!-- CERTIFICATIONS -->
 
 <section id="certifications">
 
@@ -2237,10 +1941,7 @@
 </section>
 
 
-
-<!-- =========================================
-     CONTACT
-========================================== -->
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -2265,9 +1966,7 @@
       <a
         class="contact-link"
         href="mailto:kotikoteeswarikotikoteeswari@gmail.com">
-
         ✉ Email
-
       </a>
 
 
@@ -2275,9 +1974,7 @@
         class="contact-link"
         href="https://www.linkedin.com/in/koteeswari-r-b520653ab"
         target="_blank">
-
         in LinkedIn
-
       </a>
 
 
@@ -2285,18 +1982,7 @@
         class="contact-link"
         href="https://github.com/KoteeswariR1822"
         target="_blank">
-
         GitHub
-
-      </a>
-
-
-      <a
-        class="contact-link"
-        href="tel:+918610665200">
-
-        ☎ Phone
-
       </a>
 
     </div>
@@ -2306,10 +1992,7 @@
 </section>
 
 
-
-<!-- =========================================
-     FOOTER
-========================================== -->
+<!-- FOOTER -->
 
 <footer>
 

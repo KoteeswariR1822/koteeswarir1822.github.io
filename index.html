@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,11 @@
   <title>Koteeswari R | Software Engineering Student</title>
 
   <style>
+
+    /* =========================
+       GENERAL
+    ========================== */
+
     * {
       margin: 0;
       padding: 0;
@@ -15,11 +21,20 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #f7f8fc;
       color: #1f2937;
       line-height: 1.6;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       NAVIGATION
+    ========================== */
 
     header {
       background: #111827;
@@ -37,22 +52,29 @@
 
     nav h2 {
       color: #60a5fa;
+      font-size: 24px;
     }
 
     nav ul {
       display: flex;
-      gap: 25px;
       list-style: none;
+      gap: 25px;
     }
 
-    nav a {
+    nav ul li a {
       color: white;
-      text-decoration: none;
+      font-size: 15px;
+      transition: 0.3s;
     }
 
-    nav a:hover {
+    nav ul li a:hover {
       color: #60a5fa;
     }
+
+
+    /* =========================
+       HERO SECTION
+    ========================== */
 
     .hero {
       min-height: 90vh;
@@ -63,17 +85,17 @@
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 850px;
     }
 
     .hero h1 {
-      font-size: 55px;
+      font-size: 58px;
       color: #111827;
       margin-bottom: 10px;
     }
 
     .hero h2 {
-      font-size: 25px;
+      font-size: 26px;
       color: #2563eb;
       margin-bottom: 20px;
     }
@@ -81,7 +103,12 @@
     .hero p {
       font-size: 18px;
       color: #4b5563;
+      max-width: 760px;
       margin-bottom: 30px;
+    }
+
+    .buttons {
+      margin-top: 20px;
     }
 
     .buttons a {
@@ -89,8 +116,8 @@
       padding: 12px 22px;
       margin-right: 10px;
       border-radius: 8px;
-      text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     .primary {
@@ -98,36 +125,64 @@
       color: white;
     }
 
+    .primary:hover {
+      background: #1d4ed8;
+    }
+
     .secondary {
       border: 2px solid #2563eb;
       color: #2563eb;
     }
 
+    .secondary:hover {
+      background: #2563eb;
+      color: white;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
     section {
-      padding: 70px 8%;
+      padding: 75px 8%;
     }
 
     section h2 {
       text-align: center;
-      font-size: 32px;
+      font-size: 34px;
       margin-bottom: 40px;
       color: #111827;
     }
 
+
+    /* =========================
+       ABOUT
+    ========================== */
+
     .about {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
       text-align: center;
       color: #4b5563;
       font-size: 17px;
     }
 
+    .about p {
+      margin-bottom: 15px;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================== */
+
     .skills {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
-      max-width: 900px;
+      gap: 13px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -135,8 +190,20 @@
       background: white;
       padding: 12px 18px;
       border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      font-size: 15px;
+      transition: 0.3s;
     }
+
+    .skill:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================== */
 
     .projects {
       display: grid;
@@ -148,39 +215,105 @@
       background: white;
       padding: 28px;
       border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
     }
 
     .project h3 {
       color: #2563eb;
-      margin-bottom: 12px;
+      font-size: 21px;
+      margin-bottom: 14px;
     }
 
     .project p {
       color: #4b5563;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
 
     .tech {
       font-size: 14px;
       font-weight: bold;
-      color: #374151;
+      color: #374151 !important;
     }
 
-    .education-card,
-    .certification-card {
+    .project-links {
+      margin-top: 20px;
+    }
+
+    .project-links a {
+      color: #2563eb;
+      font-weight: bold;
+      margin-right: 18px;
+    }
+
+    .project-links a:hover {
+      color: #1d4ed8;
+    }
+
+
+    /* =========================
+       EDUCATION
+    ========================== */
+
+    .education {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .education-card {
       background: white;
       padding: 25px;
       border-radius: 12px;
       margin-bottom: 20px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     }
 
-    .education-card h3,
-    .certification-card h3 {
+    .education-card h3 {
       color: #2563eb;
       margin-bottom: 8px;
     }
+
+    .education-card p {
+      color: #4b5563;
+      margin: 4px 0;
+    }
+
+
+    /* =========================
+       CERTIFICATIONS
+    ========================== */
+
+    .certifications {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .certification-card {
+      background: white;
+      padding: 22px 25px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .certification-card h3 {
+      color: #2563eb;
+      margin-bottom: 5px;
+    }
+
+    .certification-card p {
+      color: #4b5563;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
 
     .contact {
       background: #111827;
@@ -198,17 +331,36 @@
 
     .contact a {
       color: #60a5fa;
-      text-decoration: none;
+      transition: 0.3s;
     }
+
+    .contact a:hover {
+      color: white;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
 
     footer {
       background: #030712;
       color: #9ca3af;
       text-align: center;
       padding: 20px;
+      font-size: 14px;
     }
 
+
+    /* =========================
+       MOBILE RESPONSIVE
+    ========================== */
+
     @media (max-width: 700px) {
+
+      header {
+        padding: 15px 5%;
+      }
 
       nav {
         flex-direction: column;
@@ -221,6 +373,11 @@
         gap: 12px;
       }
 
+      .hero {
+        min-height: 80vh;
+        padding: 60px 6%;
+      }
+
       .hero h1 {
         font-size: 40px;
       }
@@ -228,31 +385,79 @@
       .hero h2 {
         font-size: 21px;
       }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+
+      section h2 {
+        font-size: 29px;
+      }
+
+      .buttons a {
+        margin-bottom: 10px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================== -->
 
 <header>
+
   <nav>
+
     <h2>Koteeswari R</h2>
 
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
+
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+
+      <li>
+        <a href="#education">Education</a>
+      </li>
+
+      <li>
+        <a href="#certifications">Certifications</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
     </ul>
+
   </nav>
+
 </header>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================== -->
 
 <section class="hero">
 
@@ -263,10 +468,10 @@
     <h2>Software Engineering Student</h2>
 
     <p>
-      Software Engineering student with strong problem-solving, analytical,
-      and programming skills. Interested in building technology-driven
-      products by analyzing user needs, working with data, automating
-      workflows, and developing scalable solutions.
+      Software Engineering student with strong problem-solving,
+      analytical, and programming skills. Interested in building
+      technology-driven products by analyzing user needs, working
+      with data, automating workflows, and developing scalable solutions.
     </p>
 
     <div class="buttons">
@@ -286,7 +491,10 @@
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================== -->
 
 <section id="about">
 
@@ -295,18 +503,20 @@
   <div class="about">
 
     <p>
-      I am currently pursuing an Integrated M.Tech in Software Engineering
-      at Vellore Institute of Technology, Vellore. I am interested in
-      software development, AI tools, data-driven solutions, automation,
+      I am pursuing an Integrated M.Tech in Software Engineering
+      at Vellore Institute of Technology, Vellore.
+    </p>
+
+    <p>
+      I am interested in software development, AI tools,
+      data-driven solutions, automation, problem solving,
       and technology-driven products.
     </p>
 
-    <br>
-
     <p>
-      I enjoy solving problems, learning new technologies and developing
-      practical applications using programming, machine learning and
-      software development tools.
+      I enjoy learning new technologies and developing practical
+      applications using programming, machine learning,
+      image processing, and software development tools.
     </p>
 
   </div>
@@ -314,7 +524,10 @@
 </section>
 
 
-<!-- SKILLS -->
+
+<!-- =========================
+     SKILLS
+========================== -->
 
 <section id="skills">
 
@@ -330,7 +543,7 @@
     <div class="skill">MySQL</div>
     <div class="skill">Basic Excel</div>
 
-    <div class="skill">Data Structures & Algorithms</div>
+    <div class="skill">Data Structures and Algorithms</div>
     <div class="skill">Object-Oriented Programming</div>
     <div class="skill">DBMS</div>
     <div class="skill">Operating Systems</div>
@@ -359,7 +572,10 @@
 </section>
 
 
-<!-- PROJECTS -->
+
+<!-- =========================
+     PROJECTS
+========================== -->
 
 <section id="projects">
 
@@ -372,17 +588,20 @@
 
     <div class="project">
 
-      <h3>AI-Based Project Idea Novelty Checker</h3>
+      <h3>
+        AI-Based Project Idea Novelty Checker
+      </h3>
 
       <p>
-        Developed an AI-powered application to analyze user project ideas
-        using NLP similarity analysis and classify them as Novel, Similar,
-        or Existing.
+        Developed an AI-powered application to analyze user
+        project ideas using NLP similarity analysis and classify
+        them as Novel, Similar, or Existing.
       </p>
 
       <p>
-        Automated data processing, embedding generation, similarity scoring,
-        and result visualization using Python and Streamlit.
+        Automated data processing, embedding generation,
+        similarity scoring, and result visualization using
+        Python and Streamlit.
       </p>
 
       <p class="tech">
@@ -393,20 +612,23 @@
     </div>
 
 
+
     <!-- PROJECT 2 -->
 
     <div class="project">
 
-      <h3>Secure Cloud File Storage Using Hybrid Cryptography</h3>
+      <h3>
+        Secure Cloud File Storage Using Hybrid Cryptography
+      </h3>
 
       <p>
-        Built a secure cloud storage solution to automate encrypted file
-        upload, storage and retrieval workflows.
+        Built a secure cloud storage solution to automate
+        encrypted file upload, storage, and retrieval workflows.
       </p>
 
       <p>
-        Implemented AES and RSA encryption techniques with Azure Blob
-        Storage to improve data security.
+        Implemented AES and RSA encryption techniques with
+        Azure Blob Storage to improve data security.
       </p>
 
       <p class="tech">
@@ -416,20 +638,24 @@
     </div>
 
 
+
     <!-- PROJECT 3 -->
 
     <div class="project">
 
-      <h3>Skin Tone Based Dress Color Suggestion System</h3>
+      <h3>
+        Skin Tone Based Dress Color Suggestion System
+      </h3>
 
       <p>
-        Developed an image-based recommendation system to suggest suitable
-        dress colors using machine learning techniques.
+        Developed an image-based recommendation system to
+        suggest suitable dress colors using machine learning
+        techniques.
       </p>
 
       <p>
-        Applied image processing, clustering and classification methods
-        with an interactive Streamlit application.
+        Applied image processing, clustering, and classification
+        methods with an interactive Streamlit application.
       </p>
 
       <p class="tech">
@@ -439,33 +665,46 @@
     </div>
 
 
+
     <!-- PROJECT 4 -->
 
     <div class="project">
 
-      <h3>Adaptify — Adaptive Ad Studio</h3>
+      <h3>
+        Adaptify — Adaptive Ad Studio
+      </h3>
 
       <p>
-        An adaptive advertisement layout engine that adapts a single
-        advertisement across multiple surfaces including Desktop, Tablet,
-        Mobile, Square and Banner.
+        Developed an adaptive advertisement layout engine that
+        adapts a single advertisement across Desktop, Tablet,
+        Mobile, Square, and Banner surfaces.
+      </p>
+
+      <p>
+        Built a responsive frontend with an adaptive layout
+        engine, live preview, layout inspection, and export
+        functionality.
       </p>
 
       <p class="tech">
         Technologies: React, TypeScript, Vite, CSS
       </p>
 
-      <br>
+      <div class="project-links">
 
-      <a href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
-         target="_blank">
-        GitHub →
-      </a>
+        <a
+          href="https://github.com/KoteeswariR1822/adaptify-adaptive-ad-studio"
+          target="_blank">
+          GitHub →
+        </a>
 
-      <a href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
-         target="_blank">
-        Live Demo →
-      </a>
+        <a
+          href="https://adaptify-adaptive-ad-studio-xi.vercel.app"
+          target="_blank">
+          Live Demo →
+        </a>
+
+      </div>
 
     </div>
 
@@ -474,107 +713,148 @@
 </section>
 
 
-<!-- EDUCATION -->
+
+<!-- =========================
+     EDUCATION
+========================== -->
 
 <section id="education">
 
   <h2>Education</h2>
 
-  <div class="education-card">
-
-    <h3>Vellore Institute of Technology, Vellore</h3>
-
-    <p>
-      Integrated M.Tech in Software Engineering
-    </p>
-
-    <p>
-      2022 – 2027
-    </p>
-
-    <p>
-      <strong>CGPA: 8.26 / 10</strong>
-    </p>
-
-  </div>
+  <div class="education">
 
 
-  <div class="education-card">
+    <div class="education-card">
 
-    <h3>Vidhyalakshmi Matriculation Higher Secondary School</h3>
+      <h3>
+        Vellore Institute of Technology, Vellore
+      </h3>
 
-    <p>
-      Higher Secondary School (Class XII)
-    </p>
+      <p>
+        Integrated M.Tech in Software Engineering
+      </p>
 
-    <p>
-      2020 – 2022
-    </p>
+      <p>
+        2022 – 2027
+      </p>
 
-    <p>
-      <strong>Percentage: 93.6%</strong>
-    </p>
+      <p>
+        <strong>CGPA: 8.26 / 10</strong>
+      </p>
 
-  </div>
+    </div>
 
 
-  <div class="education-card">
 
-    <h3>Sri Ramakrishna Garden Matriculation School</h3>
+    <div class="education-card">
 
-    <p>
-      Secondary School (Class X)
-    </p>
+      <h3>
+        Vidhyalakshmi Matriculation Higher Secondary School
+      </h3>
 
-    <p>
-      2019 – 2020
-    </p>
+      <p>
+        Higher Secondary School (Class XII)
+      </p>
 
-    <p>
-      <strong>Percentage: 98.8%</strong>
-    </p>
+      <p>
+        2020 – 2022
+      </p>
+
+      <p>
+        <strong>Percentage: 93.6%</strong>
+      </p>
+
+    </div>
+
+
+
+    <div class="education-card">
+
+      <h3>
+        Sri Ramakrishna Garden Matriculation School
+      </h3>
+
+      <p>
+        Secondary School (Class X)
+      </p>
+
+      <p>
+        2019 – 2020
+      </p>
+
+      <p>
+        <strong>Percentage: 98.8%</strong>
+      </p>
+
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- CERTIFICATIONS -->
+
+<!-- =========================
+     CERTIFICATIONS
+========================== -->
 
 <section id="certifications">
 
   <h2>Certifications</h2>
 
-  <div class="certification-card">
-
-    <h3>Google Artificial Intelligence Essentials</h3>
-
-    <p>Google</p>
-
-  </div>
+  <div class="certifications">
 
 
-  <div class="certification-card">
+    <div class="certification-card">
 
-    <h3>Google Machine Learning</h3>
+      <h3>
+        Google Artificial Intelligence Essentials
+      </h3>
 
-    <p>Google</p>
+      <p>
+        Google
+      </p>
 
-  </div>
+    </div>
 
 
-  <div class="certification-card">
 
-    <h3>Machine Learning Internship</h3>
+    <div class="certification-card">
 
-    <p>Rinex Technology</p>
+      <h3>
+        Google Machine Learning
+      </h3>
+
+      <p>
+        Google
+      </p>
+
+    </div>
+
+
+
+    <div class="certification-card">
+
+      <h3>
+        Machine Learning Internship
+      </h3>
+
+      <p>
+        Rinex Technology
+      </p>
+
+    </div>
 
   </div>
 
 </section>
 
 
-<!-- CONTACT -->
+
+<!-- =========================
+     CONTACT
+========================== -->
 
 <section id="contact" class="contact">
 
@@ -586,25 +866,30 @@
 
   <p>
     Email:
-    <a href="mailto:YOUR_EMAIL@gmail.com">
-      YOUR_EMAIL@gmail.com
+    <a href="mailto:kotikoteeswarikotikoteeswari@gmail.com">
+      kotikoteeswarikotikoteeswari@gmail.com
     </a>
   </p>
 
   <p>
-    Phone: +91 8610665200
+    Phone:
+    +91 8610665200
   </p>
 
   <p>
     LinkedIn:
-    <a href="YOUR_LINKEDIN_URL" target="_blank">
+    <a
+      href="https://www.linkedin.com/in/koteeswari-r-b520653ab"
+      target="_blank">
       LinkedIn Profile
     </a>
   </p>
 
   <p>
     GitHub:
-    <a href="https://github.com/KoteeswariR1822" target="_blank">
+    <a
+      href="https://github.com/KoteeswariR1822"
+      target="_blank">
       GitHub Profile
     </a>
   </p>
@@ -612,7 +897,10 @@
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
@@ -621,6 +909,7 @@
   </p>
 
 </footer>
+
 
 </body>
 </html>
